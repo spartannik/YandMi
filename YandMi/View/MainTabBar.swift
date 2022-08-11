@@ -35,7 +35,7 @@ struct MainTabBar: View {
            
             ProfileView(viewModel: ProfileViewModel(profile: NYUser(id: AuthService.shared.currentUser!.uid,
                                                                     name: "",
-                                                                    phone: 000000000000,
+                                                                    phone: 0000000000,
                                                                     address: "")))
                 .tabItem {
                     VStack {
