@@ -17,7 +17,21 @@ class DatabaseService {
         return db.collection("users")
     }
     
+    private var ordersRef: CollectionReference {
+        return db.collection("orders")
+    }
+    
     private init() { }
+    
+    func setOrder(order: Order, completion: @escaping (Result<Order, Error>) -> ()) {
+        ordersRef.document(order.id).setData(order.representation) { error in
+            if let error = error {
+                completion(.failure(error))
+            } else {
+                completion(.success(order))
+            }
+        }
+    }
     
     func setProfile(user: NYUser, completion: @escaping (Result<NYUser, Error>) -> ()) {
         
@@ -31,7 +45,7 @@ class DatabaseService {
         
     }
     
-    //// Я думаю ошибка где то здесь.
+
     
     func getProfile(completion: @escaping (Result<NYUser, Error>) -> ()) {
         
