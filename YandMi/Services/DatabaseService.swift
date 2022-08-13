@@ -8,9 +8,9 @@
 import Foundation
 import FirebaseFirestore
 
-class DataBaseService {
+class DatabaseService {
     
-    static let shared = DataBaseService()
+    static let shared = DatabaseService()
     private let db = Firestore.firestore()
     
     private var usersRef: CollectionReference {
@@ -31,6 +31,8 @@ class DataBaseService {
         
     }
     
+    //// Я думаю ошибка где то здесь.
+    
     func getProfile(completion: @escaping (Result<NYUser, Error>) -> ()) {
         
         usersRef.document(AuthService.shared.currentUser!.uid).getDocument { docSnapshot, error in
@@ -40,7 +42,7 @@ class DataBaseService {
             guard let userName = data["name"] as? String else { return }
             guard let id = data["id"] as? String else { return }
             guard let phone = data["phone"] as? Int else { return }
-            guard let address = data["adress"] as? String else { return }
+            guard let address = data["address"] as? String else { return }
             
             let user = NYUser(id: id, name: userName, phone: phone, address: address)
             

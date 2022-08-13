@@ -16,7 +16,7 @@ class ProfileViewModel: ObservableObject {
     }
     
     func setProfile() {
-        DataBaseService.shared.setProfile(user: self.profile) { result in
+        DatabaseService.shared.setProfile(user: self.profile) { result in
             switch result {
                 
             case .success(let user):
@@ -29,7 +29,7 @@ class ProfileViewModel: ObservableObject {
     }
     
     func getProfile() {
-        DataBaseService.shared.getProfile { result in
+        DatabaseService.shared.getProfile { result in
             switch result {
             case .success(let user):
                 self.profile = user
