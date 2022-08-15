@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import FirebaseFirestore
 
 struct Order {
     
@@ -24,11 +25,10 @@ struct Order {
     }
     
     var representation: [String: Any] {
-        
         var repres = [String: Any]()
         repres["id"] = id
         repres["userID"] = userID
-        repres["date"] = date
+        repres["date"] = Timestamp(date: date)
         repres["status"] = status
         return repres
     }

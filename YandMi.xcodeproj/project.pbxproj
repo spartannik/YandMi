@@ -33,6 +33,7 @@
 		C6A4884628994498006898B4 /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A4884528994498006898B4 /* ProductDetailViewModel.swift */; };
 		C6A4884828998125006898B4 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A4884728998125006898B4 /* CartViewModel.swift */; };
 		C6A4884A28998161006898B4 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A4884928998161006898B4 /* Position.swift */; };
+		C6CF7D2928AA0B9700F4B948 /* OrderStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CF7D2828AA0B9700F4B948 /* OrderStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		C6A4884528994498006898B4 /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
 		C6A4884728998125006898B4 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
 		C6A4884928998161006898B4 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		C6CF7D2828AA0B9700F4B948 /* OrderStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				C6829D1228A7D18C00936D57 /* Order.swift */,
 				C69CA638289414860036F67E /* Product.swift */,
 				C69CA640289418580036F67E /* ViewModel */,
+				C6CF7D2828AA0B9700F4B948 /* OrderStatus.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				3644E942288FFAE700386F65 /* AuthView.swift in Sources */,
 				3644E940288FFAE700386F65 /* YandMiApp.swift in Sources */,
 				C696299228A25E8B00AAC27D /* PositionCell.swift in Sources */,
+				C6CF7D2928AA0B9700F4B948 /* OrderStatus.swift in Sources */,
 				C6A4884628994498006898B4 /* ProductDetailViewModel.swift in Sources */,
 				C6A4884A28998161006898B4 /* Position.swift in Sources */,
 				C69CA636289413580036F67E /* ProfileView.swift in Sources */,
