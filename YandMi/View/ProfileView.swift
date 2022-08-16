@@ -49,7 +49,7 @@ struct ProfileView: View {
                     
                     HStack {
                         Text("+38")
-                        TextField("Телефон", value: $viewModel.profile.phone, format: .number)
+                        TextField("Телефон", value: $viewModel.profile.phone, format: IntegerFormatStyle.number)
                     }
                 }
         }

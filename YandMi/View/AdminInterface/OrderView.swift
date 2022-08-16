@@ -13,12 +13,23 @@ struct OrderView: View {
     
     var body: some View {
         
-        List {
-            ForEach(viewModel.order.positions, id: \.id) { position in
-                PositionCell(position: position)
+        VStack(alignment: .leading, spacing: 8) {
+            Text("\(viewModel.user.name)")
+                .font(.title3).bold()
+            Text("+38\(viewModel.user.phone)")
+                .bold()
+            Text("\(viewModel.user.address)")
+            List {
+                ForEach(viewModel.order.positions, id: \.id) { position in
+                    PositionCell(position: position)
+                }
+                Text("Итого \(viewModel.order.cost) UAH")
+                    .bold()
             }
-        }
-        
+        }.padding()
+            .onAppear() {
+                viewModel.getUserData()
+            }
     }
 }
 

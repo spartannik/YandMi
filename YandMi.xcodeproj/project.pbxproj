@@ -107,10 +107,10 @@
 		3644E93E288FFAE700386F65 /* YandMi */ = {
 			isa = PBXGroup;
 			children = (
-				C69CA63C289415110036F67E /* Components */,
 				3644E93F288FFAE700386F65 /* YandMiApp.swift */,
-				C69CA63D289418340036F67E /* Model */,
 				C69CA637289414610036F67E /* View */,
+				C69CA63C289415110036F67E /* Components */,
+				C69CA63D289418340036F67E /* Model */,
 				3644E943288FFAE900386F65 /* Assets.xcassets */,
 				C696299328A295BC00AAC27D /* GoogleService-Info.plist */,
 				3644E945288FFAE900386F65 /* Preview Content */,

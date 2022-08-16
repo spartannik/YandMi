@@ -33,7 +33,7 @@
             startingLineNumber = "131"
             endingLineNumber = "131"
             landmarkName = "getProfile(completion:)"
-            landmarkType = "9">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -49,7 +49,7 @@
             startingLineNumber = "124"
             endingLineNumber = "124"
             landmarkName = "getProfile(completion:)"
-            landmarkType = "9">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -64,8 +64,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "119"
             endingLineNumber = "119"
-            landmarkName = "getPositions(by:completion:)"
-            landmarkType = "7">
+            landmarkName = "DatabaseService"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -80,7 +80,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "117"
             endingLineNumber = "117"
-            landmarkName = "getPositions(by:completion:)"
+            landmarkName = "setProfile(user:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
