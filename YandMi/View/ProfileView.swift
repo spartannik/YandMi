@@ -48,7 +48,7 @@ struct ProfileView: View {
                         .font(.body.bold())
                     
                     HStack {
-                        Text("+38")
+                        Text("+380")
                         TextField("Телефон", value: $viewModel.profile.phone, format: IntegerFormatStyle.number)
                     }
                 }
@@ -108,9 +108,9 @@ struct ProfileView: View {
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
         ProfileView(viewModel: ProfileViewModel(profile: NYUser(id: "",
-                                                                name: "Никита Никита",
-                                                                phone: 000000000000,
-                                                                address: "fdsfsdf")))
+                                                                name: "",
+                                                                phone: 0,
+                                                                address: "")))
     }
 }
 
