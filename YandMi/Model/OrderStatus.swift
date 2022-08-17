@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-enum OrderStatus: String {
+enum OrderStatus: String, CaseIterable {
     case new = "Новый"
     case cooking = "Готовится"
     case delivery =  "Доставляется"

@@ -21,6 +21,10 @@ class AuthService {
         return auth.currentUser
     }
     
+    func signOut() {
+      try! auth.signOut()
+    }
+    
     func Registration(email: String,
                       password: String,
                       completion: @escaping(Result<User, Error>) -> Void) {

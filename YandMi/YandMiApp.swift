@@ -19,7 +19,7 @@ struct YandMiApp: App {
     var body: some Scene {
         WindowGroup {
             if let user = AuthService.shared.currentUser {
-                if user.uid == "PTgwQ9kSQ9WYmdx7lvShXFn7yKz22" {
+                if user.uid == "PTgwQ9kSQ9WYmdx7lvShXFn7yKz2" {
                     AdminOrdersView()
                 } else {
                     let viewModel = MainTabBarViewModel(user: user)
