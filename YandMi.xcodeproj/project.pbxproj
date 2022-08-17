@@ -11,6 +11,8 @@
 		3644E942288FFAE700386F65 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3644E941288FFAE700386F65 /* AuthView.swift */; };
 		3644E944288FFAE900386F65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3644E943288FFAE900386F65 /* Assets.xcassets */; };
 		3644E947288FFAE900386F65 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3644E946288FFAE900386F65 /* Preview Assets.xcassets */; };
+		C61B282F28AD3DD700D70B1E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61B282E28AD3DD700D70B1E /* ImagePicker.swift */; };
+		C61B283128AD424400D70B1E /* AddProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61B283028AD424400D70B1E /* AddProductView.swift */; };
 		C6421F9728A3C139004D9D51 /* NYUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6421F9628A3C139004D9D51 /* NYUser.swift */; };
 		C6421F9928A3C284004D9D51 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6421F9828A3C284004D9D51 /* DatabaseService.swift */; };
 		C6421F9B28A3D458004D9D51 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6421F9A28A3D458004D9D51 /* ProfileViewModel.swift */; };
@@ -47,6 +49,8 @@
 		3644E941288FFAE700386F65 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		3644E943288FFAE900386F65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3644E946288FFAE900386F65 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C61B282E28AD3DD700D70B1E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		C61B283028AD424400D70B1E /* AddProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductView.swift; sourceTree = "<group>"; };
 		C6421F9628A3C139004D9D51 /* NYUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYUser.swift; sourceTree = "<group>"; };
 		C6421F9828A3C284004D9D51 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
 		C6421F9A28A3D458004D9D51 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
@@ -130,6 +134,7 @@
 		C679349028AA3E710073E84D /* AdminInterface */ = {
 			isa = PBXGroup;
 			children = (
+				C61B283028AD424400D70B1E /* AddProductView.swift */,
 				C6903D5428AA4EA600055B7F /* OrderView.swift */,
 				C679348E28AA3E650073E84D /* AdminOrdersView.swift */,
 			);
@@ -165,6 +170,7 @@
 				C69CA63A289415090036F67E /* ProductCell.swift */,
 				C696299128A25E8B00AAC27D /* PositionCell.swift */,
 				C679348C28AA225F0073E84D /* OrderCell.swift */,
+				C61B282E28AD3DD700D70B1E /* ImagePicker.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -278,6 +284,7 @@
 				C6A4884828998125006898B4 /* CartViewModel.swift in Sources */,
 				C6903D5328AA40C700055B7F /* AdminOrdersViewModel.swift in Sources */,
 				C6421F9B28A3D458004D9D51 /* ProfileViewModel.swift in Sources */,
+				C61B282F28AD3DD700D70B1E /* ImagePicker.swift in Sources */,
 				C6829D1328A7D18C00936D57 /* Order.swift in Sources */,
 				C6421F9728A3C139004D9D51 /* NYUser.swift in Sources */,
 				C6421F9928A3C284004D9D51 /* DatabaseService.swift in Sources */,
@@ -290,6 +297,7 @@
 				C679348F28AA3E650073E84D /* AdminOrdersView.swift in Sources */,
 				C696299228A25E8B00AAC27D /* PositionCell.swift in Sources */,
 				C679348D28AA225F0073E84D /* OrderCell.swift in Sources */,
+				C61B283128AD424400D70B1E /* AddProductView.swift in Sources */,
 				C6CF7D2928AA0B9700F4B948 /* OrderStatus.swift in Sources */,
 				C6A4884628994498006898B4 /* ProductDetailViewModel.swift in Sources */,
 				C6A4884A28998161006898B4 /* Position.swift in Sources */,
@@ -432,6 +440,8 @@
 				DEVELOPMENT_TEAM = QLP9PS6P2W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Разрешите использовать камеру";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Разрешите открыть галерею для выбора фото";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -462,6 +472,8 @@
 				DEVELOPMENT_TEAM = QLP9PS6P2W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Разрешите использовать камеру";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Разрешите открыть галерею для выбора фото";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
