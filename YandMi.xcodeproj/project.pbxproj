@@ -16,6 +16,7 @@
 		C6421F9728A3C139004D9D51 /* NYUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6421F9628A3C139004D9D51 /* NYUser.swift */; };
 		C6421F9928A3C284004D9D51 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6421F9828A3C284004D9D51 /* DatabaseService.swift */; };
 		C6421F9B28A3D458004D9D51 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6421F9A28A3D458004D9D51 /* ProfileViewModel.swift */; };
+		C6731DB628AE664100D77F06 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6731DB528AE664100D77F06 /* StorageService.swift */; };
 		C679348D28AA225F0073E84D /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679348C28AA225F0073E84D /* OrderCell.swift */; };
 		C679348F28AA3E650073E84D /* AdminOrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679348E28AA3E650073E84D /* AdminOrdersView.swift */; };
 		C6829D1328A7D18C00936D57 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6829D1228A7D18C00936D57 /* Order.swift */; };
@@ -54,6 +55,7 @@
 		C6421F9628A3C139004D9D51 /* NYUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYUser.swift; sourceTree = "<group>"; };
 		C6421F9828A3C284004D9D51 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
 		C6421F9A28A3D458004D9D51 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		C6731DB528AE664100D77F06 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		C679348C28AA225F0073E84D /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
 		C679348E28AA3E650073E84D /* AdminOrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminOrdersView.swift; sourceTree = "<group>"; };
 		C6829D1228A7D18C00936D57 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			children = (
 				C696299C28A3936000AAC27D /* AuthService.swift */,
 				C6421F9828A3C284004D9D51 /* DatabaseService.swift */,
+				C6731DB528AE664100D77F06 /* StorageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				C696299228A25E8B00AAC27D /* PositionCell.swift in Sources */,
 				C679348D28AA225F0073E84D /* OrderCell.swift in Sources */,
 				C61B283128AD424400D70B1E /* AddProductView.swift in Sources */,
+				C6731DB628AE664100D77F06 /* StorageService.swift in Sources */,
 				C6CF7D2928AA0B9700F4B948 /* OrderStatus.swift in Sources */,
 				C6A4884628994498006898B4 /* ProductDetailViewModel.swift in Sources */,
 				C6A4884A28998161006898B4 /* Position.swift in Sources */,

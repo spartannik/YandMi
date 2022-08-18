@@ -61,14 +61,14 @@ struct ProfileView: View {
         }.padding(.horizontal)
             
             //Таблица с заказами
-            List {
+           List {
                 if viewModel.orders.count == 0 {
-                    Text("Ваши заказы будут тут!")
-                } else {
-                    ForEach(viewModel.orders, id: \.id) { order in
+                 Text("Ваши заказы будут тут!")
+               } else {
+                   ForEach(viewModel.orders, id: \.id) { order in
                         OrderCell(order: order)
-                }
-            }
+               }
+           }
                             
             }.listStyle(.plain)
             

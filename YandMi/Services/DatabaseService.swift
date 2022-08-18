@@ -13,13 +13,9 @@ class DatabaseService {
     static let shared = DatabaseService()
     private let db = Firestore.firestore()
     
-    private var usersRef: CollectionReference {
-        return db.collection("users")
-    }
-    
-    private var ordersRef: CollectionReference {
-        return db.collection("orders")
-    }
+    private var usersRef: CollectionReference { db.collection("users") }
+    private var ordersRef: CollectionReference { db.collection("orders" ) }
+    private var productsRef: CollectionReference { db.collection("products") }
     
     private init() { }
     
@@ -133,7 +129,26 @@ class DatabaseService {
             
             completion(.success(user))
         }
+    }
+    
+    func setProduct(product: Product, image: Data, completion: @escaping (Result<Product, Error>) -> ()) {
         
+        StorageService.shared.upload(id: product.id, image: image) { result in
+            switch result {
+            case .success(let sizeInfo):
+                print("sizeInfo")
+                self.productsRef.document(product.id).setData(product.representation) { error in
+                    if let error = error {
+                        completion(.failure(error))
+                    } else {
+                        completion(.success(product))
+                    }
+                }
+                
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
         
     }
     
