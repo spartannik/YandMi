@@ -9,7 +9,7 @@ import SwiftUI
 
 struct OrderCell: View {
     
-   @State var order: Order = Order(userID: "", date: Date(), status: "Новый")
+   var order: Order
     
     var body: some View {
         

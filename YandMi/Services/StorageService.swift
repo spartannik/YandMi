@@ -35,6 +35,19 @@ class StorageService {
     
    }
     
+    
+    func downloadProductImage(id: String, completion: @escaping(Result<Data, Error>) -> ()) {
+        productsRef.child(id).getData(maxSize: 2 * 1024 * 1024) { data, error in
+            guard let data = data else {
+                if let error = error {
+                    completion(.failure(error))
+                }
+                return
+            }
+            
+            completion(.success(data))
+        }
+    }
    
     
 }

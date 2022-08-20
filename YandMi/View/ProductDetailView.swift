@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProductDetailView: View {
     
-    var viewModel: ProductDetailViewModel
+    @State var viewModel: ProductDetailViewModel
     @State var typeChocolates = "45%"
     @State var count = 1
     
@@ -19,7 +19,7 @@ struct ProductDetailView: View {
         VStack {
             VStack(alignment: .leading) {
         
-            Image("vkusleta")
+                Image(uiImage: self.viewModel.image)
                 .resizable()
                 .frame(maxWidth: .infinity, maxHeight: 260)
             
@@ -64,6 +64,10 @@ struct ProductDetailView: View {
                     .background(LinearGradient(colors: [Color("brown"), Color("brown2")], startPoint: .leading, endPoint: .trailing))
                     .cornerRadius(30)
             }
+            .onAppear {
+                self.viewModel.getImage()
+            }
+            
             
             Spacer()
         }

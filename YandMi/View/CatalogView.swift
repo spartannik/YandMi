@@ -17,6 +17,7 @@ struct CatalogView: View {
     let layoutForPopularProduct85 = [GridItem(.adaptive(minimum: screen.width / 2.2))]
     let layoutForPopularProduct100 = [GridItem(.adaptive(minimum: screen.width / 2.2))]
     let layoutForPopularProductNabor = [GridItem(.adaptive(minimum: screen.width / 2.2))]
+    @StateObject var viewModel = CatalogViewModel()
     
     var body: some View {
         
@@ -47,7 +48,7 @@ struct CatalogView: View {
             Section("25%(Белый шоколад)") {
                 ScrollView(.horizontal, showsIndicators: false) {
                     LazyHGrid(rows: layoutForPopularProduct25, spacing: 10) {
-                        ForEach(CatalogViewModel.shared.chocolates25, id: \.id) {
+                        ForEach(viewModel.chocolates25, id: \.id) {
                             item in
                             NavigationLink {
                                 
@@ -69,7 +70,7 @@ struct CatalogView: View {
             Section("45%(Молочный шоколад)") {
                 ScrollView(.horizontal, showsIndicators: false) {
                     LazyHGrid(rows: layoutForPopularProduct45, spacing: 10) {
-                        ForEach(CatalogViewModel.shared.chocolates45, id: \.id) {
+                        ForEach(viewModel.chocolates45, id: \.id) {
                             item in
                             NavigationLink {
                                 
@@ -91,7 +92,7 @@ struct CatalogView: View {
             Section("75%(Темный шоколад)") {
                 ScrollView(.horizontal, showsIndicators: false) {
                     LazyHGrid(rows: layoutForPopularProduct75, spacing: 10) {
-                        ForEach(CatalogViewModel.shared.chocolates75, id: \.id) {
+                        ForEach(viewModel.chocolates75, id: \.id) {
                             item in
                             NavigationLink {
                                 
@@ -113,7 +114,7 @@ struct CatalogView: View {
             Section("85%(Темный шоколад)") {
                 ScrollView(.horizontal, showsIndicators: false) {
                     LazyHGrid(rows: layoutForPopularProduct85, spacing: 10) {
-                        ForEach(CatalogViewModel.shared.chocolates85, id: \.id) {
+                        ForEach(viewModel.chocolates85, id: \.id) {
                             item in
                             NavigationLink {
                                 
@@ -135,7 +136,7 @@ struct CatalogView: View {
             Section("100%(Экстра черный шоколад)") {
                 ScrollView(.horizontal, showsIndicators: false) {
                     LazyHGrid(rows: layoutForPopularProduct75, spacing: 10) {
-                        ForEach(CatalogViewModel.shared.chocolates100, id: \.id) {
+                        ForEach(viewModel.chocolates100, id: \.id) {
                             item in
                             NavigationLink {
                                 
@@ -157,10 +158,9 @@ struct CatalogView: View {
             Section("Наборы") {
                 ScrollView(.horizontal, showsIndicators: false) {
                     LazyHGrid(rows: layoutForPopularProductNabor, spacing: 10) {
-                        ForEach(CatalogViewModel.shared.PopularProducts, id: \.id) {
+                        ForEach(viewModel.chocolatesNabor, id: \.id) {
                             item in
                             NavigationLink {
-                                
                                 let viewModel = ProductDetailViewModel(product: item)
                                 
                                 ProductDetailView(viewModel: viewModel)
@@ -178,7 +178,10 @@ struct CatalogView: View {
     
     
         }.navigationTitle("Каталог")
-        
+            .onAppear {
+                print("Gets products")
+                self.viewModel.getProducts()
+            }
         
     }
     
