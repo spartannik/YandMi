@@ -2,7 +2,7 @@
 //  YandmiApp.swift
 //  Yandmi
 //
-//  Created by Полина on 26.07.2022.
+//  Created by Nikita Yashchenko on 1.08.2022.
 //
 
 import SwiftUI

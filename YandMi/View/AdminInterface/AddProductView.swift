@@ -14,6 +14,7 @@ struct AddProductView: View {
     @State private var title: String = ""
     @State private var price: Int? = nil
     @State private var descript: String = ""
+    @State private var categorii: String = ""
     @Environment (\.dismiss) var dismiss
     
     var body: some View {

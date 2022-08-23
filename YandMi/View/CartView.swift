@@ -22,15 +22,15 @@ struct CartView: View {
                                 pos.id == position.id
                             }
                         } label: {
-                            Text("Удалить")
+                            Text("Вилучити")
                         }.tint(.red)
                     }
             }
             .listStyle(.plain)
-            .navigationTitle("Корзина")
+            .navigationTitle("Кошик")
             
             HStack {
-                Text("Итого:")
+                Text("Разом:")
                     .fontWeight(.bold)
                 Spacer()
                 Text("\(self.viewModel.cost) UAH")
@@ -41,7 +41,7 @@ struct CartView: View {
                 Button {
                     print("Отменить")
                 } label: {
-                    Text("Отменить")
+                    Text("Скасувати")
                         .font(.body)
                         .fontWeight(.bold)
                         .padding()
@@ -67,7 +67,7 @@ struct CartView: View {
                         }
                     }
                 } label: {
-                    Text("Заказать")
+                    Text("Замовити")
                         .font(.body)
                         .fontWeight(.bold)
                         .padding()

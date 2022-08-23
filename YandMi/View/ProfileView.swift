@@ -28,23 +28,23 @@ struct ProfileView: View {
                     .onTapGesture {
                         isAvaAlertPresented.toggle()
                     }
-                    .confirmationDialog("Откуда взять фотку?", isPresented: $isAvaAlertPresented) {
+                    .confirmationDialog("Звідки взяти фото?", isPresented: $isAvaAlertPresented) {
                         Button {
                             print("Library")
                         } label: {
-                            Text("Из галереи")
+                            Text("З галереї")
                         }
                         
                         Button {
                             print("Camera")
                         } label: {
-                            Text("С камеры")
+                            Text("З камери")
                         }
             
                     }
                 
                 VStack(alignment: .leading, spacing: 12) {
-                    TextField("Имя", text: $viewModel.profile.name)
+                    TextField("Імʼя", text: $viewModel.profile.name)
                         .font(.body.bold())
                     
                     HStack {
@@ -55,15 +55,15 @@ struct ProfileView: View {
         }
         
         VStack (alignment: .leading, spacing: 8) {
-            Text("Адрес доставки")
+            Text("Адреса доставки")
                 .bold()
-            TextField("Ваш Адрес", text: $viewModel.profile.address)
+            TextField("Ваша Адреса", text: $viewModel.profile.address)
         }.padding(.horizontal)
             
             //Таблица с заказами
            List {
                 if viewModel.orders.count == 0 {
-                 Text("Ваши заказы будут тут!")
+                 Text("Ваші замовлення будуть тут")
                } else {
                    ForEach(viewModel.orders, id: \.id) { order in
                         OrderCell(order: order)
@@ -75,18 +75,18 @@ struct ProfileView: View {
             Button {
                 isQuitAlertPresented.toggle()
             } label: {
-                Text("Выйти")
+                Text("Вийти")
                     .padding()
                     .padding(.horizontal)
                     .background(Color.red)
                     .foregroundColor(.white)
                     .cornerRadius(20)
             }.padding()
-                .confirmationDialog("Действительно хотите выйти?", isPresented: $isQuitAlertPresented) {
+                .confirmationDialog("Дійсно хочете вийти?", isPresented: $isQuitAlertPresented) {
                     Button {
                         isAuthViewPresented.toggle()
                     } label: {
-                        Text("Да")
+                        Text("Так")
                     }
                 }
                 .fullScreenCover(isPresented: $isAuthViewPresented, onDismiss: nil) {

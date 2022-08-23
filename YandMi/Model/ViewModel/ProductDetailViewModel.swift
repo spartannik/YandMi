@@ -11,7 +11,7 @@ import UIKit
 
 class ProductDetailViewModel: ObservableObject {
     
-    @Published var product: Product 
+    @Published var product: Product
     @Published var count = 0
     @Published var image = UIImage(named: "vkusleta")!
     

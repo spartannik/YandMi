@@ -37,6 +37,7 @@ struct ProductDetailView: View {
                 .padding(.horizontal)
                 .padding(.vertical, 4)
                 
+            
                 
                 HStack {
                     Stepper("Количество", value: $count, in: 1...1000)
