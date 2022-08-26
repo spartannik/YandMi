@@ -16,9 +16,3 @@
 * MVVM
 * SwiftUI
 * Firebase
-
-## TO DO
-
-* Cart view.
-* Profile view.
-* Catalog view.
