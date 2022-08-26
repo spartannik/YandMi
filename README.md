@@ -11,9 +11,14 @@
 * [SwfitUI](https://developer.apple.com/xcode/swiftui/) - To build user interfaces across all Apple platforms.
 * [Xcode 13.4.1](https://developer.apple.com/documentation/xcode-release-notes/xcode-13_4_1-release-notes) - Latest version.
 
-## Features
+## Stack
 
-* On boarding page with custom animation 
-* Lazy Grid and Matched Geometry Effect
-* Hero image with Parallax Scrolling
-* SwiftUI Paged Scrolling with PageTabViewStyle
+* MVVM
+* SwiftUI
+* Firebase
+
+## TO DO
+
+* Cart view.
+* Profile view.
+* Catalog view.
