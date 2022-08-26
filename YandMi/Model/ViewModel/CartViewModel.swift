@@ -27,6 +27,10 @@ class CartViewModel: ObservableObject {
         return sum
     }
     
+    func clearr() {
+        self.positions = []
+    }
+    
     func addPosition(_ position: Position) {
         
         self.positions.append(position)

@@ -44,20 +44,21 @@ struct ProfileView: View {
                     }
                 
                 VStack(alignment: .leading, spacing: 12) {
-                    TextField("Імʼя", text: $viewModel.profile.name)
+                    TextField("Імʼя та прізвище отримувача", text: $viewModel.profile.name)
                         .font(.body.bold())
                     
                     HStack {
                         Text("+380")
-                        TextField("Телефон", value: $viewModel.profile.phone, format: IntegerFormatStyle.number)
+                        TextField("Телефон отримувача", value: $viewModel.profile.phone, format: IntegerFormatStyle.number)
                     }
                 }
         }
         
+            
         VStack (alignment: .leading, spacing: 8) {
-            Text("Адреса доставки")
+            Text("Адреса доставки,Профіль Інстаграм")
                 .bold()
-            TextField("Ваша Адреса", text: $viewModel.profile.address)
+            TextField("Місто, Номер відділення або Поштомат,Профіль Інстаграм", text: $viewModel.profile.address)
         }.padding(.horizontal)
             
             //Таблица с заказами

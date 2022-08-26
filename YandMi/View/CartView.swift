@@ -10,6 +10,7 @@ import SwiftUI
 struct CartView: View {
     
    @StateObject var viewModel: CartViewModel
+    @State var showAlert: Bool = false
     
     var body: some View {
         
@@ -36,9 +37,16 @@ struct CartView: View {
                 Text("\(self.viewModel.cost) UAH")
                     .fontWeight(.bold)
             }.padding()
+            
+            HStack {
+                Text("Посилка буде надісланна на данні вказані у профілі")
+                    .fontWeight(.bold)
+                    .padding()
+            }
         
             HStack(spacing: 24) {
                 Button {
+                    viewModel.clearr()
                     print("Отменить")
                 } label: {
                     Text("Скасувати")
@@ -61,6 +69,8 @@ struct CartView: View {
                     { result in
                         switch result {
                         case .success(let order):
+                            viewModel.clearr()
+                            showAlert.toggle()
                             print(order.cost)
                         case .failure(let error):
                             print(error.localizedDescription)
@@ -69,23 +79,23 @@ struct CartView: View {
                 } label: {
                     Text("Замовити")
                         .font(.body)
-                        .fontWeight(.bold)
+                       .fontWeight(.bold)
                         .padding()
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
                         .background(Color.green)
                         .cornerRadius(24)
                 }
+                .alert(isPresented: $showAlert) {
+                    Alert(title: Text("Ваше замовлення вже готується, дякуємо, що ви з нами!")) }
             }.padding()
+            
+            
       }
 }
 
-struct CartView_Previews: PreviewProvider {
-    static var previews: some View {
-        CartView(viewModel: CartViewModel.shared)
-    }
-  }
 }
 ///
 /////////
 ////dsdssdd
+
