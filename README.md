@@ -7,4 +7,4 @@
 
 
 ## Demo
-<img width="371" alt="Снимок экрана 2022-08-26 в 12 54 10" src="https://user-images.githubusercontent.com/54499958/186878794-92de4b88-43fa-4877-94bb-e8a92b6e62c4.png">
+<img width="371" alt="Снимок экрана 2022-08-26 в 12 54 10" src="https://user-images.githubusercontent.com/54499958/186878794-92de4b88-43fa-4877-94bb-e8a92b6e62c4.png" height="420" width="210">
