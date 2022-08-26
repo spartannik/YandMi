@@ -1,5 +1,5 @@
 # YandMi
-Клиент-серверное iOS-приложение - Интернет магазин шоколада(ручной работы).
+Client-server iOS application - Online chocolate store (handmade).
 ## Demo
 <img alt="Снимок экрана 2022-08-26 в 13 18 23" src="https://user-images.githubusercontent.com/54499958/186883030-463ba358-cad1-4c0b-8305-3bc8d2be309b.png" height="420" width="210">,
 <img alt="Снимок экрана 2022-08-26 в 12 53 35" src="https://user-images.githubusercontent.com/54499958/186879242-1df6215c-3b46-42fc-9604-e58b4d80c9a9.png" height="420" width="210">,
