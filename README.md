@@ -6,4 +6,7 @@
 <img alt="Снимок экрана 2022-08-26 в 12 53 45" src="https://user-images.githubusercontent.com/54499958/186879260-15f2d66a-67a3-4ca9-9bd3-f4680ed6835e.png" height="420" width="210">,
 <img alt="Снимок экрана 2022-08-26 в 12 53 51" src="https://user-images.githubusercontent.com/54499958/186879266-d08e76bd-6d1e-4de1-b839-0c89d86e0706.png" height="420" width="210">
 
+## Built With
 
+* [SwfitUI](https://developer.apple.com/xcode/swiftui/) - To build user interfaces across all Apple platforms.
+* [Xcode13](https://developer.apple.com/documentation/xcode-release-notes/xcode-12-beta-release-notes) - Latest beta version.
